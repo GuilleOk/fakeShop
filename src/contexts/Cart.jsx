@@ -25,8 +25,14 @@ const reducer = (state, action) => {
       
     case "REMOVE_FROM_CART": {
       const { id } = action.payload
-      const newState = state.filter(item => item.id !== id)
-      return newState
+      const index = state.findIndex(item => item.id === id)
+      const newState = structuredClone(state)
+      if (state[index].amount === 1) {
+        return newState.filter(item => item.id !== id)        
+      } else {
+        newState[index].amount -= 1
+        return newState        
+      }
     }
       
     case "CLEAN_CART": {

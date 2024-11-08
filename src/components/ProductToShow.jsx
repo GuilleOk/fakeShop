@@ -20,7 +20,7 @@ const ProductToShow = ({ productsToShow }) => {
           {
             productsToShow?.content.map(itemToShow => {
               return (
-                <div key={itemToShow.id}>
+                <div key={itemToShow.id} style={{display: 'flex', minHeight: '34rem', maxHeight: '44rem'}}>
                   <ProductContainer itemToShow={itemToShow} />
                 </div>
               )

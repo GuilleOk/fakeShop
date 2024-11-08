@@ -1,20 +1,21 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
-import { useContext } from 'react'
+import { useContext} from 'react'
 import { AddToCartIcon, RemoveFromCartIcon } from './Icons'
 import { CartContext } from '../contexts/Cart'
 
 const CartItem = ({ itemCart }) => {
   const { addToCart, removeFromCart } = useContext(CartContext)
-  
+
   const handleRemoveFromCart = () => {
-    const iteToRemove = itemCart
-    removeFromCart({ id: iteToRemove.id })
+    removeFromCart({id: itemCart.id})
   }
 
   const handleAddAmount = () => {
     const newItem = itemCart
     addToCart(newItem)
   }
+
   return (
     <div className='itemCart'>
       <div className='photoCartContainer'>
