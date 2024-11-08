@@ -37,6 +37,14 @@ body{
   color: white;
 }
 
+.hiddenCart:hover{
+  border: .1rem solid yellow;
+  border-radius: 20px;
+  box-shadow: yellow 0 0 10px;
+  background-color: black;
+  color: yellow;
+}
+
 .hiddenCart:active{
   border: .1rem solid yellow;
   border-radius: 20px;
@@ -94,7 +102,9 @@ body{
 .h1ProductToShow{
   text-align: center;
   color: white;
+  font-size: 2.5rem;
   margin: 3rem;
+  background-color: #0f0f0f;
 }
 
 .productsToShowContainer{
@@ -197,6 +207,7 @@ body{
   border-radius: 10px;
   border: .1rem solid white;
   margin: 1rem 0;
+  background-color: midnightblue;
 }
 
 .photoCartContainer{
@@ -315,4 +326,10 @@ body{
   color: red;
   border: .7rem solid red;
   box-shadow: red 0 0 1.5rem;
+}
+
+h1{
+  color: white;
+  text-align: center;
+  font-size: 4rem;
 }

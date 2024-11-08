@@ -4,13 +4,11 @@ import { ProductContext } from '../contexts/Products'
 import CategoryItem from './CategoryItem'
 import { useCategorySelect } from '../hooks/useCategorySelect'
 import ProductToShow from './ProductToShow'
-import { CartContext } from '../contexts/Cart'
 
 const CategorysToShow = () => {
   const { products } = useContext(ProductContext)
   const { categorySelected, selectCategory } = useCategorySelect()
   const [indexCategoryToShow, setIndexCategoryToShow] = useState(null)
-  const {cart} = useContext(CartContext)
   
   useEffect(() => {
     console.log('categorySelected: ', categorySelected)
@@ -22,11 +20,6 @@ const CategorysToShow = () => {
     }
   }, [categorySelected])
   
-  useEffect(() => {
-    console.log('cart: ', cart)
-  }, [cart])
-  
-
   return (
     <div className='alignCategorysContainer2'>
       <div className='categorysContainer'>

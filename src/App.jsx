@@ -13,7 +13,7 @@ function App() {
   return (
     <CartContextProvider>
       <div className='header'>
-        <div className='logo'><h3>Sky's Product</h3></div>
+        <div className='logo'><h3>Sky's Products</h3></div>
         {
           !showCart ? <div className='hiddenCart' onClick={handleClicIconCart}><CartIcon /></div> : ''
         }
@@ -24,6 +24,7 @@ function App() {
           : ''
         }
       </div>
+      <h1>Categories</h1>
       <Categorys />
     </CartContextProvider>
   )
