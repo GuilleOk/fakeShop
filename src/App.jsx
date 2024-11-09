@@ -24,7 +24,7 @@ function App() {
           : ''
         }
       </div>
-      <h2 style={{color: 'white', textAlign: 'center', fontSize: '3rem', marginRight: '0', marginTop:'9rem'}}>Categories</h2>
+      <h2 style={{color: 'white', textAlign: 'center', fontSize: '3rem', padding: '2rem', marginTop:'8rem', backgroundColor: 'rgb(1, 2, 44)'}}>Categories</h2>
       <Categorys />
       <Footer />
     </CartContextProvider>
