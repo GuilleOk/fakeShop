@@ -7,27 +7,16 @@ body{
 .header{
   margin: 2rem 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-}
-
-.logo{
-  display: inline;
-  border: .1rem solid white;
-  border-radius: 20px;
-  box-shadow: white 0 0 10px;
-  background-color: black;
-}
-
-.logoPhoto{
-  width: 9rem;
-  height: 3.6rem;
-  border: 20px;
 }
 
 .banner{
   width: 100vw;    
-  height: 6rem;
+  height: 8rem;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .hiddenCart{
@@ -35,7 +24,7 @@ body{
   padding: 1rem;
   border: .1rem solid white;
   border-radius: 20px;
-  box-shadow: white 0 0 10px;
+  box-shadow: white 0 0 19px;
   background-color: black;
   color: white;
 }

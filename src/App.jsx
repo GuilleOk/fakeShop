@@ -12,7 +12,7 @@ function App() {
   return (
     <CartContextProvider>
       <div className='header'>
-        <div className='logo'><img src='Logo tienda.png' className='logoPhoto'/></div>
+        {/* <div className='logo'><img src='Logo tienda.png' className='logoPhoto'/></div> */}
         {
           !showCart ? <div className='hiddenCart' onClick={handleClicIconCart}><CartIcon /></div> : ''
         }
