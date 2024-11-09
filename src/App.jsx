@@ -13,7 +13,7 @@ function App() {
   return (
     <CartContextProvider>
       <div className='header'>
-        <div className='logo'><img src='../public/Logo tienda.png' className='logoPhoto'/></div>
+        <div className='logo'><img src='Logo tienda.png' className='logoPhoto'/></div>
         {
           !showCart ? <div className='hiddenCart' onClick={handleClicIconCart}><CartIcon /></div> : ''
         }
@@ -24,7 +24,7 @@ function App() {
           : ''
         }
       </div>
-      <img src="../public/Banner tienda.jpg" alt="Banner" className='banner' />  
+      <img src="Banner tienda.jpg" alt="Banner" className='banner' />  
       <Categorys />
     </CartContextProvider>
   )
