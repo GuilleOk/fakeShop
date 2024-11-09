@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { CartContextProvider } from './contexts/Cart'
 import Categorys from './components/Categorys'
 import { useSelectCartComponent } from './hooks/useSelectCartComponent'
