@@ -300,10 +300,10 @@ body{
   border: .2rem solid white;
   border-radius: 10px;
   box-shadow: white 0 0 10px;
-  font-size: .7rem;
 }
 
 .carticon span{
+  font-size: .7rem;
   background-color: darkred;
   border-radius: 10px;
   padding: .1rem .1rem

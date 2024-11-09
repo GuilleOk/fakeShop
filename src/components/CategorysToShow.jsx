@@ -11,7 +11,6 @@ const CategorysToShow = () => {
   const [indexCategoryToShow, setIndexCategoryToShow] = useState(null)
   
   useEffect(() => {
-    console.log('categorySelected: ', categorySelected)
     if (categorySelected !== '') {
       const index = products.findIndex(item => item.category === categorySelected)
       setIndexCategoryToShow(index)
