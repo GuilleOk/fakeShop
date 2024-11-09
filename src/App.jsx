@@ -3,6 +3,7 @@ import Categorys from './components/Categorys'
 import { useSelectCartComponent } from './hooks/useSelectCartComponent'
 import { CartIcon } from './components/Icons'
 import CartContent from './components/CartContent'
+import Footer from './components/Footer'
 
 function App() { 
   const { showCart, switchComponent } = useSelectCartComponent()
@@ -11,8 +12,8 @@ function App() {
   }
   return (
     <CartContextProvider>
+      <img src="Banner tienda.jpg" alt="Banner" className='banner' />  
       <div className='header'>
-        {/* <div className='logo'><img src='Logo tienda.png' className='logoPhoto'/></div> */}
         {
           !showCart ? <div className='hiddenCart' onClick={handleClicIconCart}><CartIcon /></div> : ''
         }
@@ -23,8 +24,9 @@ function App() {
           : ''
         }
       </div>
-      <img src="Banner tienda.jpg" alt="Banner" className='banner' />  
+      <h2 style={{color: 'white', textAlign: 'center', fontSize: '3rem', marginRight: '0', marginTop:'9rem'}}>Categories</h2>
       <Categorys />
+      <Footer />
     </CartContextProvider>
   )
 }
