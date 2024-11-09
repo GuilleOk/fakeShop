@@ -198,11 +198,28 @@ body{
   background-color: #0f0f0f;
   padding: 1rem .4rem;
   border-radius: 10px;
+  max-height: 100vh;
+  overflow-y: auto;
+  scrollbar-color: #0f0f0f;
+}
+
+/* Estilo para la barra de desplazamiento en navegadores WebKit (Chrome, Safari) */
+.cartContent::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento */
+}
+
+.cartContent::-webkit-scrollbar-track {
+  background: black; /* Fondo de la pista de desplazamiento */
+}
+
+.cartContent::-webkit-scrollbar-thumb {
+  background: white; /* Color de la barra de desplazamiento */
+  border-radius: 10px; /* Bordes redondeados de la barra */
 }
 
 .itemCart{
   display: flex;
-  height: 8rem;
+  height: 8.5rem;
   width: 100%;
   border-radius: 10px;
   border: .1rem solid white;
