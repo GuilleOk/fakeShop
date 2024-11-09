@@ -202,7 +202,7 @@ body{
 
 .itemCart{
   display: flex;
-  height: 7.5rem;
+  height: 8rem;
   width: 100%;
   border-radius: 10px;
   border: .1rem solid white;
@@ -281,7 +281,7 @@ body{
 }
 
 .imgItemCart{
-  height: 7.5rem;
+  height: 100%;
   width: 6rem;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
